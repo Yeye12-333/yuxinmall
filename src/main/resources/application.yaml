@@ -1,0 +1,22 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    username: root
+    password: 02117lxy
+    url: jdbc:mysql://localhost:3306/mallelectron?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2b8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level.com.example.mallelectron: debug
+upload-path: D:/project/mall-electron(1)/mall-electron/upload
